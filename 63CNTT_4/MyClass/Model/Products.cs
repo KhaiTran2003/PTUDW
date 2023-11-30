@@ -24,13 +24,10 @@ namespace MyClass.Model
 
         [Required(ErrorMessage = "Mã nhà cung cấp không để trống")]
         [Display(Name = "Mã nhà cung cấp")]
-        public int SupplierId { get; set; }
+        public int SupplierID { get; set; }
 
         [Display(Name = "Tên rút gọn")]
         public string Slug { get; set; }
-
-        [Display(Name = "Chi tiết")]
-        public string Detail { get; set; }
 
         [Display(Name = "Hình ảnh")]
         public string Image { get; set; }
