@@ -14,8 +14,8 @@ namespace MyClass.Model
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Tên loại hàng")]
-        [Required(ErrorMessage = "Tên loại sản phẩm không được để trống")]
+        [Required(ErrorMessage = "Tên loại SP không để trống")]
+        [Display(Name = "Tên loại SP")]
         public string Name { get; set; }
 
         [Display(Name = "Tên rút gọn")]
@@ -27,31 +27,32 @@ namespace MyClass.Model
         [Display(Name = "Sắp xếp")]
         public int? Order { get; set; }
 
+        [Required(ErrorMessage = "Mô tả không để trống")]
         [Display(Name = "Mô tả")]
-        [Required(ErrorMessage = "Mô tả không được để trống")]
         public string MetaDesc { get; set; }
 
+        [Required(ErrorMessage = "Từ khóa không để trống")]
         [Display(Name = "Từ khóa")]
-        [Required(ErrorMessage = "Từ khóa không được để trống")]
         public string MetaKey { get; set; }
 
-        [Required(ErrorMessage = "Người tạo không được để trống")]
-        [Display(Name = "Người tạo")]
+        [Display(Name = "Tạo bởi")]
+        [Required(ErrorMessage = "Người tạo không để trống")]
         public int CreateBy { get; set; }
 
-        [Required(ErrorMessage = "Ngày tạo không được để trống")]
         [Display(Name = "Ngày tạo")]
+        [Required(ErrorMessage = "Ngày tạo không để trống")]
         public DateTime CreateAt { get; set; }
 
-        [Display(Name = "Người cập nhật")]
-        public int? UpdateBy { get; set; }
+        [Display(Name = "Cập nhật bởi")]
+        [Required(ErrorMessage = "Người cập nhật không để trống")]
+        public int UpdateBy { get; set; }
 
         [Display(Name = "Ngày cập nhật")]
-        public DateTime? UpdateAt { get; set; }
+        [Required(ErrorMessage = "Ngày cập nhật không để trống")]
+        public DateTime UpdateAt { get; set; }
 
-        [Required(ErrorMessage = "Trạng thái không được để trống")]
         [Display(Name = "Trạng thái")]
+        [Required(ErrorMessage = "Trạng thái không để trống")]
         public int Status { get; set; }
-
     }
 }

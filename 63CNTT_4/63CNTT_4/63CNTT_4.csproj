@@ -129,8 +129,10 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\SupplierController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -244,6 +246,18 @@
     <Content Include="Public\img\blog\prev.jpg" />
     <Content Include="Public\img\cart.jpg" />
     <Content Include="Public\img\Fevicon.png" />
+    <Content Include="Public\img\keo\banner1.jpg" />
+    <Content Include="Public\img\keo\banner2.jpg" />
+    <Content Include="Public\img\keo\banner3.jpg" />
+    <Content Include="Public\img\keo\banner4.jpg" />
+    <Content Include="Public\img\keo\keocung1.jpg" />
+    <Content Include="Public\img\keo\keocung2.jpg" />
+    <Content Include="Public\img\keo\keocung3.jpg" />
+    <Content Include="Public\img\keo\keodeo1.jpg" />
+    <Content Include="Public\img\keo\keodeo2.jpg" />
+    <Content Include="Public\img\keo\keodeo3.jpg" />
+    <Content Include="Public\img\keo\keodeo4.jpg" />
+    <Content Include="Public\img\keo\keodeo5.jpg" />
     <Content Include="Public\img\login.jpg" />
     <Content Include="Public\img\logo.png" />
     <Content Include="Public\img\r1.jpg" />
@@ -2652,6 +2666,11 @@
     <Content Include="Areas\Admin\Views\Product\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Trash.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Index.cshtml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2684,6 +2703,7 @@
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Shared\Message.cshtml" />
+    <Content Include="Views\Module\MainMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
